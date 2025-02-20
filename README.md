@@ -1,1 +1,1 @@
-# kotlim-seminars
+# kotlin-seminars
