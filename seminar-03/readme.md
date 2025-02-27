@@ -7,7 +7,7 @@ Seminar outcomes:
 * Iterable implementation
 
 ### Overview
-Each RPG Game consist of multiple charachers with their own unique features. In addition, they have their own inventory with items, such as armor, weapon, elixirs and so on, that affects on the abilities. We will build both things and then simulate the battle between these charachers. 
+Each RPG game consists of multiple characters, each with unique features. Additionally, they have their own inventory containing items such as armor, weapons, elixirs, and more, which affect their abilities. We will implement both the character system and the inventory system, then simulate a battle between these characters.
 
 ### Task 1
 **Create a structured hierarchy for characters in a battle system.**
@@ -45,7 +45,7 @@ Each class should override:
 * defend(incomingDamage: Int): Modifies damage taken.
 
 **Bonus task**:
-1) What if we dont want all charachers have fighing abilities? And we want to introduce new class `citizen`? It is character, but without fighing behaviour. Call the TA, discuss it and then implement :)
+1) What if we don’t want all characters to have combat abilities? What if we want to introduce a new Citizen class—a character without fighting behavior? Call the TA, discuss the idea, and then implement it! 
 
 ### Task 2
 Implement the Item System
