@@ -21,10 +21,10 @@
 	</tr>
 	<tr>
 		<td align="center">20.02.2025</td>
-		<td>Practice: <a href="seminar-02">Fraction class</a></td>
+		<td>Practice: <a href="seminar-02">Fraction class</a> &nbsp;|&nbsp; <a href="seminar-02-solution">[Solution]</a></td>
 	</tr>
 	<tr>
 		<td align="center">27.02.2025</td>
-		<td>Practice: <a href="seminar-03">RPG-game</a></td>
+		<td>Practice: <a href="seminar-03">RPG-game<a> &nbsp;|&nbsp; <a href="seminar-03-solution">[Solution]</a></td>
 	</tr>
 </table>
