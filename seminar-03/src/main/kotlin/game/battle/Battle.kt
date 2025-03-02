@@ -6,7 +6,7 @@ package org.edu.jvm.languages.game.battle
  * @property character1 the first character
  * @property character2 the second character
  */
-class Battle(private val character1: Character, private val character2: Character) {
+class Battle(private val character1: GameCharacter, private val character2: GameCharacter) {
 
     fun simulate() {
         var round = 1
