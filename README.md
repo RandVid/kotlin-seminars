@@ -29,6 +29,6 @@
 	</tr>
 	<tr>
 		<td align="center">06<sup>th</sup> of March &nbsp;&nbsp;&nbsp;</td>
-		<td></td>
+		<td>Practice: <a href="seminar-04">Generics</a></td>
 	</tr>
 </table>
