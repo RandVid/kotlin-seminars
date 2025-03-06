@@ -1,6 +1,7 @@
 package org.edu.jvm.languages.game.battle
 
-import org.edu.jvm.languages.game.character.Character
+import org.edu.jvm.languages.game.character.GameCharacter
+import org.edu.jvm.languages.game.inventory.Elixir
 
 /**
  * Represents a battle between two characters.
