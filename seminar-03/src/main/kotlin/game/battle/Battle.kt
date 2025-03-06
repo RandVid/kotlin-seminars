@@ -1,5 +1,7 @@
 package org.edu.jvm.languages.game.battle
 
+import org.edu.jvm.languages.game.character.Character
+
 /**
  * Represents a battle between two characters.
  *
