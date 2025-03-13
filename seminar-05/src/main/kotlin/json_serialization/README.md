@@ -1,6 +1,16 @@
 # JSON Serialization
 
-In this task, you will implement a `toJson` function that converts a Kotlin object into a JSON string representation
+Serialization is the process of converting an object into a format that can be stored or transmitted and later reconstructed. In this seminar, we will implement a toJson function in Kotlin to serialize objects into JSON format.
+
+## Objective:
+
+* Implement a `toJson` function for serializing Kotlin objects to **JSON**.
+
+* Handle primitive data types, collections, and maps.
+
+* Use reflection to extract object properties.
+
+* Support custom annotations for renaming fields and ignoring properties.
 
 ## Instructions
 
@@ -11,8 +21,15 @@ In this task, you will implement a `toJson` function that converts a Kotlin obje
 2. **Implement the `valueToJson` function**:
    - Handle different types of values (e.g., numbers, strings, collections).
    - Ensure proper formatting for JSON, like wrapping strings in quotes.
-
-
+3. **Implement Annotations**:
+   -Define custom annotations to rename or ignore properties and modify your `toJson` function.
+   ```
+   @Target(AnnotationTarget.PROPERTY)
+   annotation class JsonName(val name: String)
+   
+   @Target(AnnotationTarget.PROPERTY)
+   annotation class JsonIgnore
+```
 ## Expected result from running the main function
 
 ```json

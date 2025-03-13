@@ -6,7 +6,7 @@ class Creature(
     val name: String,
     val attack: Int,
     val defence: Int,
-    val traits: List<String>,
+    val traits: List<Trait>,
     val cost: Map<Element, Int>
 )
 
@@ -35,12 +35,13 @@ fun main() {
         name = "Cockatrice",
         attack = 2,
         defence = 4,
-        traits = listOf("FLYING"),
+        traits = listOf(Trait.FLYING),
         cost = mapOf(
             Element.ANY to 3,
             Element.FOREST to 2
         )
     )
-
     println(creature.toJson())
+// {"att": 2, "cost": {"ANY": 3, "FOREST": 2},
+// "def": 4, "traits": ["FLYING"]}
 }
