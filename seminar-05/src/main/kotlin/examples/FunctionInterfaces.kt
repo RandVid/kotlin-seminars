@@ -30,8 +30,8 @@ fun main() {
 
     println(f3(5, 10)) // 15
 
-    // basic methods
-    val f = String::times
+    // Basic methods
+    val f: KFunction<String> = String::times
     println(f.isInline) // true
     println(f.isExternal) // false
     println(f.isOperator) // true

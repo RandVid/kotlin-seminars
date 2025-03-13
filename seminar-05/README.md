@@ -21,31 +21,27 @@ Serialization is the process of converting an object into a format that can be s
 2. **Implement the `valueToJson` function**:
    - Handle different types of values (e.g., numbers, strings, collections).
    - Ensure proper formatting for JSON, like wrapping strings in quotes.
+
 3. **Implement Annotations**:
-   -Define custom annotations to rename or ignore properties and modify your `toJson` function.
-   ```
-   @Target(AnnotationTarget.PROPERTY)
-   annotation class JsonName(val name: String)
-   
-   @Target(AnnotationTarget.PROPERTY)
-   annotation class JsonIgnore
-```
+   - Uncomment annotation definitions and their usage in the `Creature` class
+
+
 ## Expected result from running the main function
 
 ```json
-{"attack": 2, "cost": {"ANY": 3, "FOREST": 2}, "defence": 4, "name": "Cockatrice", "traits": ["FLYING"]}
+{"att": 2, "cost": {"ANY": 3, "FOREST": 2}, "def": 4, "name": "Cockatrice", "traits": ["FLYING"]}
 ```
 
 Or the pretty-printed version:
 
 ```json
 {
-    "attack": 2,
+    "att": 2,
     "cost": {
         "ANY": 3,
         "FOREST": 2
     },
-    "defence": 4,
+    "def": 4,
     "name": "Cockatrice",
     "traits": ["FLYING"]
 }
