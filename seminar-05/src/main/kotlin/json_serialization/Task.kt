@@ -23,11 +23,11 @@ fun Any.toJson(): String {
 }
 
 private fun objectToJson(any: Any): String {
-    TODO("Implement logic for serializing objects")
+    TODO("Logic for serializing objects")
 }
 
 private fun valueToJson(value: Any?): String {
-    TODO("Implement logic for serializing values")
+    TODO("Logic for serializing values")
 }
 
 fun main() {
