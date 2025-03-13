@@ -33,6 +33,6 @@
 	</tr>
 	<tr>
 		<td align="center">13<sup>th</sup> of March &nbsp;&nbsp;&nbsp;</td>
-		<td>Practice: <a href="seminar-05">Reflection</a></td>
+		<td>Practice: <a href="seminar-05">Reflection & Collections</a></td>
 	</tr>
 </table>

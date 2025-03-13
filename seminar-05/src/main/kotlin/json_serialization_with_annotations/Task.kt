@@ -30,19 +30,19 @@ fun Any.toJson(): String {
 }
 
 private fun objectToJson(any: Any): String {
-    TODO("Implement logic for serializing objects")
+    TODO("Logic for serializing objects")
 }
 
 private fun valueToJson(value: Any?): String {
-    TODO("Implement logic for serializing values")
+    TODO("Logic for serializing values")
 }
 
 private fun iterableToJson(any: Iterable<*>): String {
-    TODO("Implement logic for serializing Iterable")
+    TODO("Logic for serializing Iterable")
 }
 
 private fun mapToJson(any: Map<*, *>): String {
-    TODO("Implement logic for serializing Map")
+    TODO("Logic for serializing Map")
 }
 
 fun main() {

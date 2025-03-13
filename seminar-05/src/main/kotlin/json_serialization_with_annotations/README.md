@@ -16,8 +16,6 @@ In this task, you will enhance the `toJson` function to respect two custom annot
 
 ## Expected Result
 
-The output should be a JSON string that respects the annotations for renaming properties and excluding some properties:
-
 ```json
 {"att": 2, "cost": {"ANY": 3, "FOREST": 2}, "def": 4, "traits": ["FLYING"]}
 ```
