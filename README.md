@@ -31,4 +31,8 @@
 		<td align="center">06<sup>th</sup> of March &nbsp;&nbsp;&nbsp;</td>
 		<td>Practice: <a href="seminar-04">Generics</a> &nbsp;|&nbsp; <a href="seminar-04-solution">[Solution]</a></td>
 	</tr>
+	<tr>
+		<td align="center">13<sup>th</sup> of March &nbsp;&nbsp;&nbsp;</td>
+		<td>Practice: <a href="seminar-05">Reflection</a></td>
+	</tr>
 </table>
