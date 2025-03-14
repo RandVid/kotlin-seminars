@@ -2,16 +2,7 @@ package json_serialization
 
 import kotlin.reflect.full.memberProperties
 
-// @Target(AnnotationTarget.PROPERTY)
-// annotation class JsonName(val name: String)
-
-// @Target(AnnotationTarget.PROPERTY)
-// annotation class JsonIgnore
-
 class Creature(
-//    @JsonIgnore val name: String,
-//    @JsonName("att") val attack: Int,
-//    @JsonName("def") val defence: Int,
     val name: String,
     val attack: Int,
     val defence: Int,
@@ -33,6 +24,7 @@ fun Any.toJson(): String {
 
 private fun objectToJson(any: Any): String {
     TODO("Logic for serializing objects")
+    // Use valueToJson, iterableToJson and mapToJson functions here
 }
 
 private fun valueToJson(value: Any?): String {
@@ -59,6 +51,5 @@ fun main() {
         )
     )
     println(creature.toJson())
-    // Step 2: {"name": "Cockatrice", "att": 2, "cost": {"ANY": 3, "FOREST": 2}, "def": 4, "traits": ["FLYING"]}
-    // Step 3: {"name": "Cockatrice", "att": 2, "cost": {"ANY": 3, "FOREST": 2}, "def": 4, "traits": ["FLYING"]}
+    // {"attack": 2, "cost": {"ANY": 3, "FOREST": 2}, "defence": 4, "name": "Cockatrice", "traits": ["FLYING"]}
 }

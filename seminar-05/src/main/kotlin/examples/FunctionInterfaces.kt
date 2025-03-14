@@ -47,5 +47,4 @@ fun main() {
     println(f.isOpen) // false
     println(f.isAbstract) // false
     println(f.isSuspend) // false
-
 }
