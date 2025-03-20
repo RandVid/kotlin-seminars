@@ -15,21 +15,16 @@ Serialization is the process of converting an object into a format that can be s
 ## Instructions
 
 1. **Implement the `objectToJson` function**:
-   - Use reflection to get the list of properties from the class.
-   - Use the [`joinToString`](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/join-to-string.html) function to join property-value pairs into a JSON-like structure.
+  - Use reflection to get the list of properties from the class.
+  - Use the [`joinToString`](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/join-to-string.html) function to join property-value pairs into a JSON-like structure.
 
 2. **Implement the `valueToJson` function**:
-   - Handle different types of values (e.g., numbers, strings, collections).
-   - Ensure proper formatting for JSON, like wrapping strings in quotes.
-3. **Implement Annotations**:
-   -Define custom annotations to rename or ignore properties and modify your `toJson` function.
-   ```
-   @Target(AnnotationTarget.PROPERTY)
-   annotation class JsonName(val name: String)
-   
-   @Target(AnnotationTarget.PROPERTY)
-   annotation class JsonIgnore
-```
+  - Handle different types of values (e.g., numbers, strings, collections).
+  - Ensure proper formatting for JSON, like wrapping strings in quotes.
+
+<!-- 3. **Implement Annotations**: -->
+   <!-- - Uncomment annotation definitions and their usage in the `Creature` class -->
+
 ## Expected result from running the main function
 
 ```json

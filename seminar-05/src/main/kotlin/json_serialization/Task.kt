@@ -24,10 +24,19 @@ fun Any.toJson(): String {
 
 private fun objectToJson(any: Any): String {
     TODO("Logic for serializing objects")
+    // Use valueToJson, iterableToJson and mapToJson functions here
 }
 
 private fun valueToJson(value: Any?): String {
     TODO("Logic for serializing values")
+}
+
+private fun iterableToJson(any: Iterable<*>): String {
+    TODO("Logic for serializing Iterable")
+}
+
+private fun mapToJson(any: Map<*, *>): String {
+    TODO("Logic for serializing Map")
 }
 
 fun main() {
@@ -42,6 +51,5 @@ fun main() {
         )
     )
     println(creature.toJson())
-// {"att": 2, "cost": {"ANY": 3, "FOREST": 2},
-// "def": 4, "traits": ["FLYING"]}
+    // {"attack": 2, "cost": {"ANY": 3, "FOREST": 2}, "defence": 4, "name": "Cockatrice", "traits": ["FLYING"]}
 }
