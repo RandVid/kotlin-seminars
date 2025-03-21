@@ -1,8 +1,6 @@
 package examples
 
-
 var counter = 0
-
 
 fun main() {
     val thread1 = Thread {
@@ -18,5 +16,5 @@ fun main() {
     thread1.join()
     thread2.join()
 
-    println("Final counter value: $counter") // Should be 2000 but likely won't be
+    println("Final counter value: $counter") // Should be 200000 but likely won't be
 }

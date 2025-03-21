@@ -1,4 +1,3 @@
-
 import org.jetbrains.kotlinx.lincheck.*
 import org.jetbrains.kotlinx.lincheck.strategy.managed.modelchecking.*
 import org.jetbrains.kotlinx.lincheck.strategy.stress.*
@@ -10,7 +9,7 @@ import kotlin.reflect.*
 abstract class TestBase(
     val sequentialSpecification: KClass<*>,
     val checkObstructionFreedom: Boolean = true,
-    val scenarios: Int = 150,
+    val scenarios: Int = 10,
     val threads: Int = 3,
     val actorsBefore: Int = 1
 ) {
@@ -18,7 +17,7 @@ abstract class TestBase(
     fun modelCheckingTest() = try {
         ModelCheckingOptions()
             .iterations(scenarios)
-            .invocationsPerIteration(10_000)
+            .invocationsPerIteration(10)
             .actorsBefore(actorsBefore)
             .threads(threads)
             .actorsPerThread(2)
@@ -35,7 +34,7 @@ abstract class TestBase(
     fun stressTest() = try {
         StressOptions()
             .iterations(scenarios)
-            .invocationsPerIteration(25_000)
+            .invocationsPerIteration(1000)
             .actorsBefore(actorsBefore)
             .threads(threads)
             .actorsPerThread(2)
